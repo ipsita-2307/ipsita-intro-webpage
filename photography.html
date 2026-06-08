@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>📸  WELCOME TO MY MINI GALLERY  📸</title>
+
+<style>
+
+body{
+    background-color:#ffe4ec;
+    font-family:"Comic Sans MS", cursive;
+    text-align:center;
+    margin:20px;
+}
+
+h1{
+    color:#ff1493;
+    font-size:45px;
+}
+
+p{
+    color:#d63384;
+    font-size:18px;
+}
+
+.gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    margin-top:30px;
+}
+
+.gallery img{
+    width:250px;
+    height:250px;
+    object-fit:cover;
+    border-radius:25px;
+    border:4px solid #ff69b4;
+    box-shadow:0 4px 12px rgba(255,105,180,0.5);
+    transition:0.4s;
+}
+
+.gallery img{
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+}
+}
+
+button{
+    background-color:#ff69b4;
+    color:white;
+    border:none;
+    padding:12px 24px;
+    border-radius:25px;
+    cursor:pointer;
+    font-size:16px;
+    margin-top:30px;
+}
+
+button:hover{
+    background-color:#ff1493;
+    transform:scale(1.05);
+}
+
+hr{
+    height:3px;
+    background:#ff1493;
+    border:none;
+    margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>📸🌸 Ipsita's Photography Paradise 🌸📸</h1>
+
+<p>
+✨ Welcome to my little photography world ✨<br><br>
+
+🌷 Capturing beautiful moments<br>
+🌈 Chasing dreamy sunsets<br>
+🍃 Exploring nature's beauty<br>
+☁️ Finding magic in everyday life<br>
+💖 Creating memories through my lens<br><br>
+
+📷 Click on any photo to view it in full size! ✨
+</p>
+<div class="gallery" id="gallery"></div>
+
+<script>
+
+let photos = [
+"gallery.1.jpeg",
+"gallery.2.jpeg",
+"gallery.3.jpeg",
+"gallery.4.jpeg",
+"gallery.5.jpeg",
+"gallery.6.jpeg",
+"gallery.7.jpeg",
+"gallery.8.jpeg",
+"gallery.9.jpeg",
+"gallery.10.jpeg",
+"gallery.11.jpeg",
+"gallery.12.jpeg",
+"gallery.13.jpeg",
+"gallery.14.jpeg",
+"gallery.15.jpeg",
+"gallery.16.jpeg",
+"gallery.17.jpeg",
+"gallery.18.jpeg",
+"gallery.19.jpeg",
+"gallery.20.jpeg",
+"gallery.21.jpeg",
+"gallery.22.jpeg",
+"gallery.23.jpeg",
+"gallery.24.jpeg",
+"gallery.25.jpeg",
+"gallery.26.jpeg",
+"gallery.27.jpeg",
+"gallery.28.jpeg",
+"gallery.29.jpeg",
+"gallery.30.jpeg",
+"gallery.31.jpeg",
+"gallery.32.jpeg",
+"gallery.33.jpeg",
+"gallery.34.jpeg",
+"gallery.35.jpeg",
+"gallery.36.jpeg",
+"gallery.37.jpeg",
+"gallery.38.jpeg",
+];
+photos.sort(() => Math.random() - 0.5);
+
+let gallery = document.getElementById("gallery");
+
+photos.forEach(photo => {
+    gallery.innerHTML += `
+        <a href="${photo}" target="_blank">
+            <img src="${photo}" alt="Photography">
+        </a>
+    `;
+});
+
+</script>
+<b></b>
+<hr>
+
+<p>
+🦋 Thank you for visiting my gallery! 🦋<br>
+💖 Made with love by Ipsita 💖<br>
+📸 Keep smiling and keep capturing memories ✨<br><br>
+
+🌸🌷🎀💖🧸🦋✨🌈☁️🍃🌺💫📷🩷
+  <a href="index.html">
+<button>🏠🌸 Back To Home 🌸🏠</button>
+</a>
+</p>
+</body>
+</html>
+
