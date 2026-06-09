@@ -1,1 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title> ohoo i see someone is happy today! 😊</title>
+
+<style>
+
+body{
+    margin:0;
+    padding:30px;
+    background:#fff0f5;
+    font-family:'Comic Sans MS', cursive;
+    text-align:center;
+}
+
+/* Emoji Background */
+
+.emoji-bg{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    opacity:0.12;
+    font-size:35px;
+    z-index:-1;
+    line-height:90px;
+    pointer-events:none;
+}
+
+h1{
+    color:#ff1493;
+    font-size:50px;
+}
+
+.subtitle{
+    color:#d63384;
+    font-size:22px;
+}
+
+/* Horizontal Slider */
+
+.song-slider{
+    overflow:hidden;
+    width:100%;
+    margin:40px 0;
+}
+
+.song-track{
+    display:flex;
+    gap:25px;
+    width:max-content;
+    animation:slide 25s linear infinite;
+}
+
+@keyframes slide{
+    from{
+        transform:translateX(0);
+    }
+
+    to{
+        transform:translateX(-50%);
+    }
+}
+.song-card{
+    width:250px;
+    background:white;
+    border-radius:25px;
+    padding:15px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    flex-shrink:0;
+}
+
+.song-card:hover{
+    transform:scale(1.05);
+    transition:0.3s;
+}
+
+.song-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:20px;
+}
+
+.song-card h3{
+    color:#ff1493;
+    margin-top:15px;
+}
+
+.song-card p{
+    color:#d63384;
+}
+.spotify-btn{
+    display:inline-block;
+    background:#1DB954;
+    color:white;
+    text-decoration:none;
+    padding:10px 20px;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+.spotify-btn:hover{
+    transform:scale(1.05);
+}
+.home-btn{
+    display:inline-block;
+    margin-top:30px;
+    background:#ff69b4;
+    color:white;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:50px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.home-btn:hover{
+    background:#ff1493;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="emoji-bg">
+🌸 💖 🎀 ✨ 🌷 🩷 🌸 💖 🎀 ✨ 🌷 🩷
+<br><br>
+🎀 ✨ 🌷 🩷 🌸 💖 🎀 ✨ 🌷 🩷 🌸 💖
+<br><br>
+🌷 🩷 🌸 💖 🎀 ✨ 🌷 🩷 🌸 💖 🎀 ✨
+</div>
+
+<h1>😊 Happy Playlist 😊</h1>
+
+<p class="subtitle">
+Songs to make your day brighter ☀️💖
+</p>
+
+<div class="song-slider">
+
+<div class="song-track">
+
+<div class="song-card">
+<img src="song1.jpg">
+
+<h3>🎵 malang sajna</h3>
+
+<p>song by Sachet Tandon and Parampara Tandon</p>
+
+<a href="https://open.spotify.com/track/73K33p4Vyz9koXGqmL5eFs?si=2dce8a93ef334edf" target="_blank" class="spotify-btn">
+💚 Spotify
+</a>
+</div>
+
+<div class="song-card">
+<img src="song2.jpg">
+
+<h3>🎵 tere pyaar mein </h3>
+
+<p>Song by Arijit Singh and Nikhita Gandhi</p>
+
+<a href="https://open.spotify.com/track/2ZD4aIEepqZsdxPxLSuUhm?si=ad2de62f81b94544" target="_blank" class="spotify-btn">
+💚 Spotify
+</a>
+</div>
+
+<div class="song-card">
+<img src="song3.jpg">
+
+<h3>🎵matargashti</h3>
+
+<p> song by Mohit Chauhan</p>
+
+<a href="https://open.spotify.com/track/5GeBgck1MU2tlIkMpsn8uT?si=12c5f5c1d40549ce" target="_blank" class="spotify-btn">
+💚 Spotify
+</a>
+</div>
+<div class="song-card">
+<img src="song4.jpg">
+
+<h3>🎵thodi si daaru</h3>
+
+<p>song by AP Dhillon and Shreya Ghoshal</p>
+
+<a href="https://open.spotify.com/track/3JiLQJmVW7d4O8AQDFB3oj?si=507456b0d7044dd1" target="_blank" class="spotify-btn">
+💚 Spotify
+</a>
+</div>
+  
+<div class="song-card">
+<img src="song5.jpg">
+
+<h3>🎵chaleya</h3>
+
+<p>song by Arijit Singh and Shilpa Rao</p>
+
+<a href=\"https://open.spotify.com/track/3xMHXmedL5Rvfxmiar9Ryv?si=036e40427c314f3c" target="_blank" class="spotify-btn">
+💚 Spotify
+</a>
+</div>
+
+<div class="song-card">
+<img src="song6.jpg">
+
+<h3>🎵lutt putt gaya</h3>
+
+<p>Song by Arijit Singh</p>
+
+<a href="https://open.spotify.com/track/72Z2D7jpKevicRkyL45mbw?si=76a21946e2ce4de5" target="_blank" class="spotify-btn">
+💚 Spotify
+</a>
+</div>
+<div class="song-card">
+<img src="song7.jpg">
+
+<h3>🎵tum hi ho bandhu</h3>
+
+<p>Song by Kavita Seth, Neeraj Shridhar, and Pritam Chakrabort</p>
+
+<a href="https://open.spotify.com/track/5MxiAxvsFQIr8JZi8XRntN?si=7d8a15efbcca4b80" target="_blank" class="spotify-btn">
+💚 Spotify
+</a>
+</div>
+  <div class="song-card">
+<img src="song8.jpg">
+
+<h3>🎵lagdi lahore di</h3>
+
+<p>Song by Guru Randhawa and Tulsi Kumar</p>
+
+<a href="https://open.spotify.com/track/31d3tVd82tx2sjA2VQ3PMZ?si=e13d770bab08487f" target="_blank" class="spotify-btn">
+💚 Spotify
+</a>
+</div>
+  <div class="song-card">
+<img src="song9.jpg">
+
+<h3>prem ki nayya</h3>
+
+<p>Song by Neeraj Shridhar, Pritam Chakraborty, and Suzanne D'Mello</p>
+
+<a href="https://open.spotify.com/track/2JDsi7S0UmtGoyVPTda0ao?si=9e96f0efa86243c2" target="_blank" class="spotify-btn">
+💚 Spotify
+</a>
+</div>
+  <div class="song-card">
+<img src="song10.jpg">
+
+<h3>ye ishq hai</h3>
+
+<p>Song by Arijit Singh</p>
+
+<a href="https://open.spotify.com/track/4BiPsAV070dg3eLSVf727A?si=439f8f4f606b418e" target="_blank" class="spotify-btn">
+💚 Spotify
+</a>
+</div>
+
+</div>
+
+</div>
+
+<a href="index.html" class="home-btn">
+🏠 Back To Moods
+</a>
+
+</body>
+</html>
