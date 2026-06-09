@@ -1,141 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>🎀 Music For Every Mood 🎀</title>
 
 <style>
 
 body{
-    margin:0;
-    padding:30px;
-    background:#ffe4ef;
-    font-family:'Trebuchet MS', sans-serif;
+    background:#ffd6e7;
+    font-family:'Comic Sans MS', cursive;
     text-align:center;
+    margin:0;
+    padding:50px;
 }
-
-/* Heading */
 
 h1{
-    color:#ff4f9a;
+    color:#ff1493;
     font-size:50px;
-    margin-bottom:10px;
 }
 
-.subtitle{
-    color:#777;
+p{
+    color:#d63384;
     font-size:22px;
-    margin-bottom:25px;
 }
-
-/* Quote */
-
-#quote{
-    background:white;
-    max-width:700px;
-    margin:20px auto;
-    padding:15px;
-    border-radius:20px;
-    color:#ff4f9a;
-    font-size:20px;
-    box-shadow:0 4px 12px rgba(0,0,0,0.08);
-}
-
-/* Main Box */
-
-.mood-box{
-    background:white;
-    max-width:950px;
-    margin:auto;
-    padding:30px;
-    border-radius:30px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.08);
-}
-
-.mood-box h2{
-    color:#ff4f9a;
-    margin-bottom:5px;
-}
-
-.mood-text{
-    color:#888;
-    margin-bottom:20px;
-}
-
-/* Buttons */
 
 .mood-btn{
+    display:block;
+    width:250px;
+    margin:15px auto;
+    padding:15px;
     background:#ff69b4;
     color:white;
-    border:none;
-    padding:15px 25px;
-    margin:8px;
-    border-radius:50px;
-    font-size:18px;
-    cursor:pointer;
+    text-decoration:none;
+    border-radius:30px;
+    font-size:20px;
+    font-weight:bold;
     transition:0.3s;
 }
 
 .mood-btn:hover{
-    background:#ff4f9a;
-    transform:translateY(-3px);
-}
-    .home-btn{
-    display:inline-block;
-    padding:12px 25px;
-    background:#ff69b4;
-    color:white;
-    text-decoration:none;
-    border-radius:25px;
-    font-size:18px;
-    font-weight:bold;
-    margin-top:20px;
-    transition:0.3s;
-}
-
-.home-btn:hover{
     background:#ff1493;
     transform:scale(1.05);
-}
-
-/* Playlist Area */
-
-#playlist{
-    margin-top:30px;
-}
-
-.song-card{
-    background:#fff0f7;
-    max-width:500px;
-    margin:15px auto;
-    padding:18px;
-    border-radius:20px;
-}
-
-.song-card a{
-    text-decoration:none;
-    color:#ff1493;
-    font-size:18px;
-    font-weight:bold;
-}
-
-.song-card a:hover{
-    text-decoration:underline;
-}
-
-.mood-message{
-    color:#666;
-    margin-bottom:20px;
-}
-
-/* Footer */
-
-footer{
-    margin-top:40px;
-    color:#ff4f9a;
-    font-size:18px;
 }
 
 </style>
@@ -143,224 +47,20 @@ footer{
 
 <body>
 
-<h1>🎀 Music For Every Mood 🎀</h1>
+<h1>🎀 What's Your Mood? 🎀</h1>
 
-<p class="subtitle">
-💕 Because every feeling deserves a soundtrack 💕
-</p>
+<p>Choose your mood, pookie! 💖</p>
 
-<div id="quote"></div>
+<a href="happy.html" class="mood-btn">😊 Happy Mood</a>
 
-<div class="mood-box">
+<a href="sad.html" class="mood-btn">🥺 Sad Mood</a>
 
-<h2>💖 What's Your Mood Today? 💖</h2>
+<a href="romantic.html" class="mood-btn">💕 Romantic Mood</a>
 
-<p class="mood-text">
-✨ Let the music match your vibe ✨
-</p>
+<a href="study.html" class="mood-btn">📚 Study Mood</a>
 
-<button class="mood-btn" onclick="showSongs('happy')">🌸 Happy</button>
-
-<button class="mood-btn" onclick="showSongs('sad')">💔 Sad</button>
-
-<button class="mood-btn" onclick="showSongs('love')">💕 Romantic</button>
-
-<button class="mood-btn" onclick="showSongs('night')">🌙 Midnight</button>
-
-<button class="mood-btn" onclick="showSongs('main')">✨ Main Character</button>
-
-<button class="mood-btn" onclick="showSongs('rain')">☔ Rainy Mood</button>
-
-<div id="playlist">
-
-<h3>🌷 Choose your mood below 🌷</h3>
-
-</div>
-
-</div>
-
-<footer>
-🎶 Made with love, sparkles & good music 🎶
-</footer>
-
-<script>
-
-/* Random Quote */
-
-const quotes = [
-
-"🌸 You're doing amazing sweetie!",
-
-"🎀 Stay soft but never weak.",
-
-"💖 Music understands feelings words can't.",
-
-"✨ Main character energy activated.",
-
-"🧸 You deserve all good things."
-
-];
-
-document.getElementById("quote").innerHTML =
-quotes[Math.floor(Math.random()*quotes.length)];
-
-
-/* Mood Function */
-
-function showSongs(mood){
-
-let songs = "";
-
-if(mood === "happy"){
-
-songs = `
-<h2>🌸 Happy Playlist 🌸</h2>
-
-<p class="mood-message">
-☀️ Sunshine detected! Time for happy songs!
-</p>
-
-<div class="song-card">
-<a href="https://youtu.be/ZbZSe6N_BXs" target="_blank">
-🎵 Happy - Pharrell Williams
-</a>
-</div>
-
-<div class="song-card">
-<a href="https://youtu.be/y6Sxv-sUYtM" target="_blank">
-🎵 Count On Me
-</a>
-</div>
-`;
-
-}
-
-else if(mood === "sad"){
-
-songs = `
-<h2>💔 Sad Playlist 💔</h2>
-
-<p class="mood-message">
-🫂 Sending virtual hugs...
-</p>
-
-<div class="song-card">
-<a href="https://youtu.be/J_ub7Etch2U" target="_blank">
-🎵 Let Her Go
-</a>
-</div>
-
-<div class="song-card">
-<a href="https://youtu.be/450p7goxZqg" target="_blank">
-🎵 Someone Like You
-</a>
-</div>
-`;
-
-}
-
-else if(mood === "love"){
-
-songs = `
-<h2>💕 Romantic Playlist 💕</h2>
-
-<p class="mood-message">
-🌷 Somebody has butterflies today...
-</p>
-
-<div class="song-card">
-<a href="https://youtu.be/GxldQ9eX2wo" target="_blank">
-🎵 Until I Found You
-</a>
-</div>
-
-<div class="song-card">
-<a href="https://youtu.be/2Vv-BfVoq4g" target="_blank">
-🎵 Perfect
-</a>
-</div>
-`;
-
-}
-
-else if(mood === "night"){
-
-songs = `
-<h2>🌙 Midnight Playlist 🌙</h2>
-
-<p class="mood-message">
-✨ Headphones on, feelings on...
-</p>
-
-<div class="song-card">
-<a href="https://youtu.be/fHI8X4OXluQ" target="_blank">
-🎵 Night Changes
-</a>
-</div>
-
-<div class="song-card">
-<a href="https://youtu.be/RBumgq5yVrA" target="_blank">
-🎵 Sweater Weather
-</a>
-</div>
-`;
-
-}
-
-else if(mood === "main"){
-
-songs = `
-<h2>✨ Main Character Playlist ✨</h2>
-
-<p class="mood-message">
-👑 The world is your movie.
-</p>
-
-<div class="song-card">
-<a href="https://youtu.be/e-ORhEE9VVg" target="_blank">
-🎵 Blank Space
-</a>
-</div>
-
-<div class="song-card">
-<a href="https://youtu.be/nfWlot6h_JM" target="_blank">
-🎵 Shake It Off
-</a>
-</div>
-`;
-
-}
-
-else if(mood === "rain"){
-
-songs = `
-<h2>☔ Rainy Mood Playlist ☔</h2>
-
-<p class="mood-message">
-🌧 Window seat + coffee + music.
-</p>
-
-<div class="song-card">
-<a href="https://youtu.be/kPa7bsKwL-c" target="_blank">
-🎵 See You Again
-</a>
-</div>
-
-<div class="song-card">
-<a href="https://youtu.be/3JWTaaS7LdU" target="_blank">
-🎵 I Will Always Love You
-</a>
-</div>
-`;
-
-}
-
-document.getElementById("playlist").innerHTML = songs;
-
-}
-  <a href="index.html" class="home-btn">Back To Home</a>
-
-</script>
+<a href="party.html" class="mood-btn">🎉 Party Mood</a>
+    <a href="main.html" class="mood-btn">😊 main vibe</a>
 
 </body>
 </html>
