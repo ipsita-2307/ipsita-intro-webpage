@@ -1,1 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title> Sad playlist </title>
+
+<style>
+
+body{
+    margin:0;
+    padding:30px;
+    background:#fff0f5;
+    font-family:'Comic Sans MS', cursive;
+    text-align:center;
+}
+
+.hearts{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    z-index:-1;
+    pointer-events:none;
+}
+
+.hearts span{
+    position:absolute;
+    display:block;
+    font-size:35px;
+    animation:float 15s linear infinite;
+    bottom:-100px;
+    opacity:0.4;
+}
+
+.hearts span:nth-child(1){
+    left:10%;
+    animation-duration:12s;
+}
+
+.hearts span:nth-child(2){
+    left:20%;
+    animation-duration:18s;
+}
+
+.hearts span:nth-child(3){
+    left:35%;
+    animation-duration:14s;
+}
+
+.hearts span:nth-child(4){
+    left:50%;
+    animation-duration:20s;
+}
+
+.hearts span:nth-child(5){
+    left:65%;
+    animation-duration:13s;
+}
+
+.hearts span:nth-child(6){
+    left:75%;
+    animation-duration:17s;
+}
+
+.hearts span:nth-child(7){
+    left:85%;
+    animation-duration:15s;
+}
+
+.hearts span:nth-child(8){
+    left:30%;
+    animation-duration:19s;
+}
+
+.hearts span:nth-child(9){
+    left:55%;
+    animation-duration:16s;
+}
+
+.hearts span:nth-child(10){
+    left:90%;
+    animation-duration:22s;
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(0) rotate(0deg);
+        opacity:0;
+    }
+
+    20%{
+        opacity:0.5;
+    }
+
+    100%{
+        transform:translateY(-120vh) rotate(360deg);
+        opacity:0;
+    }
+}
+
+h1{
+    color:#ff1493;
+    font-size:50px;
+}
+
+.subtitle{
+    color:#d63384;
+    font-size:22px;
+}
+
+/* Horizontal Slider */
+
+.song-slider{
+    overflow:hidden;
+    width:100%;
+    margin:40px 0;
+}
+
+.song-track{
+    display:flex;
+    gap:25px;
+    width:max-content;
+    animation:slide 25s linear infinite;
+}
+
+@keyframes slide{
+    from{
+        transform:translateX(0);
+    }
+
+    to{
+        transform:translateX(-50%);
+    }
+}
+.song-card{
+    width:250px;
+    background:white;
+    border-radius:25px;
+    padding:15px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    flex-shrink:0;
+}
+
+.song-card:hover{
+    transform:scale(1.05);
+    transition:0.3s;
+}
+
+.song-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:20px;
+}
+
+.song-card h3{
+    color:#ff1493;
+    margin-top:15px;
+}
+
+.song-card p{
+    color:#d63384;
+}
+.spotify-btn{
+    display:inline-block;
+    background:#1DB954;
+    color:white;
+    text-decoration:none;
+    padding:10px 20px;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+.spotify-btn:hover{
+    transform:scale(1.05);
+}
+.home-btn{
+    display:inline-block;
+    margin-top:30px;
+    background:#ff69b4;
+    color:white;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:50px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.home-btn:hover{
+    background:#ff1493;
+}
+
+</style>
+</head>
+
+<body>
+  <div class="hearts">
+    <span>💖</span>
+    <span>💕</span>
+    <span>💗</span>
+    <span>💞</span>
+    <span>💓</span>
+    <span>💖</span>
+    <span>💕</span>
+    <span>💗</span>
+    <span>💞</span>
+    <span>💓</span>
+</div>
+
+<h1> dw these songs will make you feel better✨</h1>
+
+<p class="subtitle">
+Songs to make you feel happier 💖
+</p>
+
+<div class="song-slider">
+
+<div class="song-track">
+
+<div class="song-card">
+<img src="sadsong1.jpg">
+
+<h3>🎵 sun raha hai </h3>
+
+<p>Song by Raxstar and Shreya Ghoshal</p>
+
+<a href="https://open.spotify.com/track/5PvwPy5eRO8BPwpRzCHK3D?si=182975572a0242a9" target="_blank" class="spotify-btn">
+💚 Spotify
+</a>
+</div>
+
+<div class="song-card">
+<img src="sadsong2.jpg">
+
+<h3>🎵 tujhe sochta hoon</h3>
+
+<p>Song by KK </p>
+
+<a "https://open.spotify.com/track/47l2Dd3XPBLio3kjbEMyDJ?si=b2948d3433c34054" target="_blank" class="spotify-btn">
+💚 Spotify
+</a>
+</div>
+
+<div class="song-card">
+<img src="sadsong3.jpg">
+
+<h3>🎵 deewana kar raha hai</h3>
+
+<p> Song by Javed Ali</p>
+
+<a href="https://open.spotify.com/track/2tva3nN2kQhBjHMC7Zlty6?si=cd036005977642be" target="_blank" class="spotify-btn">
+💚 Spotify
+</a>
+</div>
+<div class="song-card">
+<img src="sadsong4.jpg">
+
+<h3>🎵raabta </h3>
+
+<p>Song by Arijit Singh</p>
+
+<a href="https://open.spotify.com/track/6FjbAnaPRPwiP3sciEYctO?si=64249ec5c6bd4797" target="_blank" class="spotify-btn">
+💚 Spotify
+</a>
+</div>
+  
+<div class="song-card">
+<img src="sadsong5.jpg">
+
+<h3>🎵Aye khuda</h3>
+
+<p>Song by Kshitij Tarey, Mithoon, and Saim Bhat</p>
+
+<a href=\"https://open.spotify.com/track/3NCv2EkeY8aD5tXNhiS0K6?si=6d43ddf8a1724f77" target="_blank" class="spotify-btn">
+💚 Spotify
+</a>
+</div>
+
+<div class="song-card">
+<img src="sadsong6.jpg">
+
+<h3>🎵darkhaast</h3>
+
+<p>Song by Mithoon</p>
+
+<a href="https://open.spotify.com/track/1awtp7rf6ajhGY9BgzCHeZ?si=974cada8009f48f6" target="_blank" class="spotify-btn">
+💚 Spotify
+</a>
+</div>
+<div class="song-card">
+<img src="sadsong7.jpg">
+
+<h3>🎵jee le zaraa</h3>
+
+<p>Song by Vishal Dadlani</p>
+
+<a href="https://open.spotify.com/track/2r32XiAWtZbT3eLUvf4pag?si=14777cce5daf4d2f" target="_blank" class="spotify-btn">
+💚 Spotify
+</a>
+</div>
+  <div class="song-card">
+<img src="sadsong8.jpg">
+
+<h3>🎵you</h3>
+
+<p>Song by armaan malik</p>
+
+<a href="https://open.spotify.com/track/52INmBPUsLUQ6to3WnGWUm?si=b35a157bb2c14729" target="_blank" class="spotify-btn">
+💚 Spotify
+</a>
+</div>
+  <div class="song-card">
+<img src="sadsong9.jpg">
+
+<h3>jeena jeena</h3>
+
+<p>Song by Atif Aslam</p>
+
+<a href="https://open.spotify.com/track/6h09y5UH6sDRERJALlaJPi?si=4dc180236691489b" target="_blank" class="spotify-btn">
+💚 Spotify
+</a>
+</div>
+  <div class="song-card">
+<img src="sadsong 10.jpg">
+
+<h3>humdard</h3>
+
+<p>Song by Arijit Singh and Mithoon</p>
+
+<a href="https://open.spotify.com/track/2PvaburAUlhNHxVhw5lvOq?si=6cdd4daf8d784213" target="_blank" class="spotify-btn">
+💚 Spotify
+</a>
+</div>
+
+</div>
+
+</div>
+
+<a href="favoritesongs.html" class="home-btn">
+want to change mood?
+</a>
+
+</body>
+</html>
