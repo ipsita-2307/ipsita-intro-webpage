@@ -1,1 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title> Sad playlist </title>
+
+<style>
+
+body{
+    margin:0;
+    padding:30px;
+    background:#fff0f5;
+    font-family:'Helvetica', Arial, sans-serif;
+    text-align:center;
+
+}
+
+/* Emoji Background */
+
+.emoji-bg{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    opacity:0.12;
+    font-size:35px;
+    z-index:-1;
+    line-height:90px;
+    pointer-events:none;
+}
+
+h1{
+    color:#ff1493;
+    font-size:50px;
+}
+
+.subtitle{
+    color:#d63384;
+    font-size:22px;
+}
+
+/* Horizontal Slider */
+
+.song-slider{
+    overflow:hidden;
+    width:100%;
+    margin:40px 0;
+}
+
+.song-track{
+    display:flex;
+    gap:25px;
+    width:max-content;
+    animation:slide 25s linear infinite;
+}
+
+@keyframes slide{
+    from{
+        transform:translateX(0);
+    }
+
+    to{
+        transform:translateX(-50%);
+    }
+}
+.song-card{
+    width:250px;
+    background:white;
+    border-radius:25px;
+    padding:15px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    flex-shrink:0;
+}
+
+.song-card:hover{
+    transform:scale(1.05);
+    transition:0.3s;
+}
+
+.song-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:20px;
+}
+
+.song-card h3{
+    color:#ff1493;
+    margin-top:15px;
+}
+
+.song-card p{
+    color:#d63384;
+}
+.spotify-btn{
+    display:inline-block;
+    background:#FFB7CE;
+    color:white;
+    text-decoration:none;
+    padding:10px 20px;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+.spotify-btn:hover{
+    transform:scale(1.05);
+}
+.home-btn{
+    display:inline-block;
+    margin-top:30px;
+    background:#ff69b4;
+    color:white;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:50px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.home-btn:hover{
+    background:#ff1493;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="emoji-bg">
+🌸 💖 🎀 ✨ 🌷 🩷 🌸 💖 🎀 ✨ 🌷 🩷
+<br><br>
+🎀 ✨ 🌷 🩷 🌸 💖 🎀 ✨ 🌷 🩷 🌸 💖
+<br><br>
+🌷 🩷 🌸 💖 🎀 ✨ 🌷 🩷 🌸 💖 🎀 ✨
+</div>
+
+<h1> songs that will make you slay your moves✨</h1>
+
+<p class="subtitle">
+Click on any song to listen to it 💖
+</p>
+
+<div class="song-slider">
+
+<div class="song-track">
+
+<div class="song-card">
+<img src="party1.jpeg">
+
+<h3>🎵sheila ki jawani </h3>
+
+<p>Song by Sunidhi Chauhan, Vishal Dadlani, and Vishal–Shekhar</p>
+
+<a href="https://open.spotify.com/track/6VbmeIWTbNHM5uqoW7GTE4?si=9f37775082b843ad" target="_blank" class="spotify-btn">
+listen
+</a>
+</div>
+
+<div class="song-card">
+<img src="party2.jpeg">
+
+<h3>🎵chikni chameli</h3>
+
+<p>Song by Ajay-Atul and Shreya Ghoshal</p>
+
+<a "https://open.spotify.com/track/1NtUkEglWHG26BOqj3rPhQ?si=92ca9c3a5f3b4ad7" target="_blank" class="spotify-btn">
+listen
+</a>
+</div>
+
+<div class="song-card">
+<img src="party3.jpeg">
+
+<h3>🎵jhalla wallah</h3>
+
+<p>Song by Ajinkya Iyer, Neuman Pinto, and Shreya Ghoshal</p>
+
+<a href="Song by Ajinkya Iyer, Neuman Pinto, and Shreya Ghoshal" target="_blank" class="spotify-btn">
+listen
+</a>
+</div>
+<div class="song-card">
+<img src="party4.jpeg">
+
+<h3>🎵jalebi baby</h3>
+
+<p>song by tesher</p>
+
+<a href="https://open.spotify.com/track/6GKGoi0FHzldk1ZRQoV1fv?si=dc91c0ff7f064a5e" target="_blank" class="spotify-btn">
+listen
+</a>
+</div>
+  
+<div class="song-card">
+<img src="party5.jpeg">
+
+<h3>🎵chammak challo</h3>
+
+<p>Song by Akon, Hamsika Iyer, and Vishal–Shekhar</p>
+
+<a href="https://open.spotify.com/track/0EH7sgeiFqDa3eS7ieW2zs?si=3a4b7a6c9ffe45ef" target="_blank" class="spotify-btn">
+listen
+</a>
+</div>
+
+<div class="song-card">
+<img src="party6.jpeg">
+
+<h3>🎵kajra re </h3>
+
+<p>Song by Alisha Chinai, Javed Ali, and Shankar Mahadevan </p>
+
+<a href="https://open.spotify.com/track/1Zhd0vU0BOHBNQ5bHfk1vV?si=6ec2768ace3e467b" target="_blank" class="spotify-btn">
+listen
+</a>
+</div>
+<div class="song-card">
+<img src="party7.jpeg">
+
+<h3>🎵kala chashma</h3>
+
+<p>Song by Amar Arshi</p>
+
+<a href="https://open.spotify.com/track/6mdLX10dvBb7rGYbMXpKzz?si=be0b44b7c0fd49ad" target="_blank" class="spotify-btn">
+listen
+</a>
+</div>
+  <div class="song-card">
+<img src="party8.jpeg">
+
+<h3>🎵khalasi</h3>
+
+<p>Song by Achint Thakkar and Aditya Gadhvi </p>
+
+<a href="https://open.spotify.com/track/5LSAafg2oH9YPgf3EG17iw?si=fe1dc1b4243c4124" target="_blank" class="spotify-btn">
+listen
+</a>
+</div>
+  <div class="song-card">
+<img src="party9.jpeg">
+
+<h3>🎵Jugnu</h3>
+
+<p>Song by Badshah</p>
+
+<a href="https://open.spotify.com/track/4GI6sk4q4Keg9BMdCHLq5r?si=569788c7dcf14dbc" class="spotify-btn">
+ listen
+</a>
+</div>
+  <div class="song-card">
+<img src="party10.jpeg">
+
+<h3>🎵gulabi sadi</h3>
+
+<p>https://open.spotify.com/track/4ITtnvLQ6SOA8XhiqkLa24?si=0d89698a277444bb</p>
+
+<a href="https://open.spotify.com/track/4ITtnvLQ6SOA8XhiqkLa24?si=0d89698a277444bb" target="_blank" class="spotify-btn">
+ listen
+</a>
+</div>
+
+</div>
+
+</div>
+
+<a href="favoritesongs.html" class="home-btn">
+want to change mood?
+</a>
+
+</body>
+</html>
